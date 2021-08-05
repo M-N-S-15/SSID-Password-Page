@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+ 
+  background: url(https://images.pexels.com/photos/347065/pexels-photo-347065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+
+
+
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #664AFF;
+}
+
+.button2:hover {
+  background-color: #664AFF;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;"><span style="color: #5600A7;">| M O V I N G |</span></h1>
+
+<form action="TT1.php" method="post">
+
+<br><br><br><br>
+<div style="text-align:center;width:500px;">
+  <button class="button button1" value="F" name="FORWARD">FORWARD</button><br><br>
+  <button class="button button1" value="L" name="LEFT">LEFT</button>
+  <button class="button button1" value="R" name="RIGHT">RIGHT</button><br><br>
+  <button class="button button1" value="B" name="BACKWARD">BACKWARD </button>
+</div>
+
+
+<button value="S" class="button button2" name="STOP" >STOP</button>
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "e1f53330-e2d2-401a-a103-7d2515839050", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "b5e629ae-6fad-4cdf-8ed8-8571fa5eb031", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+
+</form>
+
+</body>
+</html>
