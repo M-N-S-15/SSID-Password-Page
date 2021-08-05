@@ -1,3 +1,3 @@
 # SSID-Password-Page
 
-اضافة صفحة تسجيل دخول الى صفحة التحكم بالروبوت
+Add a login page to the robot control page
